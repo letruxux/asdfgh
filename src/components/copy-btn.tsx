@@ -1,5 +1,6 @@
 "use client";
 
+import toast from "react-hot-toast";
 import { usePackages } from "./packages-provider";
 
 export default function CopyButton() {
@@ -8,12 +9,13 @@ export default function CopyButton() {
   return (
     <button
       className="btn btn-primary w-full"
-      onClick={() =>
+      onClick={() => {
         navigator.clipboard.writeText(
           packages.map((e) => `winget install -e --id ${e.Id}`).join(";")
-        )
-      }
-      disabled={packages.length === 0}
+        );
+        toast.success("Script copied to clipboard!");
+      }}
+      disabled={packages.length < 0}
     >
       Copy
     </button>
