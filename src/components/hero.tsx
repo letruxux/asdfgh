@@ -15,7 +15,7 @@ export default function Hero() {
 
       <span className="rotate-1 block relative z-10">
         <h1 className={font.className + " italic tracking-wide font-black text-5xl"}>
-          wowowowowo ☆
+          asdfgh ☆
         </h1>
         <h5 className="italic tracking-wide font-light text-lg ">
           install apps easily with{" "}

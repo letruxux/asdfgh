@@ -4,7 +4,7 @@ import "./globals.css";
 import { PackagesProvider } from "@/components/packages-provider";
 
 export const metadata: Metadata = {
-  title: "wowowowowo ☆",
+  title: "asdfgh ☆",
   description: "easy program dl",
 };
 
@@ -20,7 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
+      <head>
+        <link
+          rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>💫</text></svg>"
+        ></link>
+      </head>
       <body className={`${font.className} antialiased p-4`}>
         <PackagesProvider>
           <section className="max-w-6xl w-full block mx-auto">{children}</section>

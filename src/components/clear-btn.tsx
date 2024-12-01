@@ -7,7 +7,7 @@ export default function ClearButton() {
 
   return (
     <button
-      className="btn btn-ghost hover:bg-red-500 hover:text-white w-full"
+      className="btn btn-ghost hover:bg-red-500 hover:text-white w-full mb-2"
       onClick={() => clearPackages()}
       disabled={packages.length === 0}
     >
