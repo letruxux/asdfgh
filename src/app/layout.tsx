@@ -3,6 +3,7 @@ import { Onest } from "next/font/google";
 import "./globals.css";
 import { PackagesProvider } from "@/components/packages-provider";
 import { Toaster } from "react-hot-toast";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "asdfgh ☆",
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     siteName: "asdfgh ☆",
     images: [
       {
-        url: "https://asdfgh.vercel.app/og.png",
+        url: "https://asdfgh-apps.vercel.app/og.png",
         width: 1200,
         height: 630,
       },
@@ -41,6 +42,7 @@ export default function RootLayout({
           rel="icon"
           href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>💫</text></svg>"
         />
+        <Analytics />
       </head>
       <body className={`${font.className} antialiased p-4`}>
         <Toaster position="bottom-center" />
