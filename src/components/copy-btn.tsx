@@ -15,7 +15,7 @@ export default function CopyButton() {
         );
         toast.success("Script copied to clipboard!");
       }}
-      disabled={packages.length < 0}
+      disabled={packages.length === 0}
     >
       Copy
     </button>

@@ -6,6 +6,7 @@ import CopyTextarea from "@/components/textarea";
 import CopyButton from "@/components/copy-btn";
 import FaqSection from "@/components/faq-section";
 import SelectionSection from "@/components/selection-section";
+import ReviewModal from "@/components/review-modal-toggle";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <section className="w-full p-4 bg-base-200 rounded-3xl my-12">
         <CopyTextarea />
         <ClearButton />
+        <ReviewModal />
         <CopyButton />
       </section>
       <section className="mt-4 w-full bg-base-200 rounded-3xl mb-24">

@@ -2,7 +2,13 @@ import { Package } from "@/lib/winget";
 import GlobeIcon from "./globe-icon";
 import { usePackages } from "./packages-provider";
 
-export default function PackageButton({ pack }: { pack: Package }) {
+export default function PackageButton({
+  pack,
+  style,
+}: {
+  pack: Package;
+  style?: React.CSSProperties;
+}) {
   const { packages, addPackage, removePackage } = usePackages();
 
   const isInstalled = packages.some((p) => p.Id === pack.Id);
@@ -10,6 +16,7 @@ export default function PackageButton({ pack }: { pack: Package }) {
   return (
     <li
       className="list-none tooltip"
+      style={style}
       data-tip={pack.Latest.Description || pack.Latest.Name}
     >
       <label className="flex items-center gap-2 p-2 rounded-lg hover:bg-base-300 transition-colors cursor-pointer">

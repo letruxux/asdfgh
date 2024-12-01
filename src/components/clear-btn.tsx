@@ -10,7 +10,7 @@ export default function ClearButton() {
     <button
       className="btn btn-ghost hover:bg-red-500 hover:text-white w-full mb-2"
       onClick={() => clearPackages()}
-      disabled={packages.length < 0}
+      disabled={packages.length === 0}
     >
       Clear
     </button>
