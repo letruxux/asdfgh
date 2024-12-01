@@ -7,6 +7,21 @@ import { Toaster } from "react-hot-toast";
 export const metadata: Metadata = {
   title: "asdfgh ☆",
   description: "easy program dl",
+  openGraph: {
+    title: "asdfgh ☆",
+    description: "easy program dl",
+    url: "https://asdfgh.vercel.app",
+    siteName: "asdfgh ☆",
+    images: [
+      {
+        url: "https://asdfgh.vercel.app/og.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
 };
 
 const font = Onest({
