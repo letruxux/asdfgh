@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const SvgIcon = () => (
+const GlobeIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -18,4 +18,4 @@ const SvgIcon = () => (
   </svg>
 );
 
-export default SvgIcon;
+export default GlobeIcon;

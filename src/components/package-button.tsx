@@ -1,5 +1,5 @@
 import { Package } from "@/lib/winget";
-import SvgIcon from "./globe-icon";
+import GlobeIcon from "./globe-icon";
 import { usePackages } from "./packages-provider";
 
 export default function PackageButton({ pack }: { pack: Package }) {
@@ -22,7 +22,7 @@ export default function PackageButton({ pack }: { pack: Package }) {
         <span className="text-lg">{pack.Latest.Name}</span>
         {pack.Latest.Homepage && (
           <a href={pack.Latest.Homepage} target="_blank" className="inline-block ml-auto">
-            <SvgIcon />
+            <GlobeIcon />
           </a>
         )}
       </label>
