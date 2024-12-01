@@ -4,15 +4,15 @@ import ClearButton from "@/components/clear-btn";
 import Hero from "@/components/hero";
 import CopyTextarea from "@/components/textarea";
 import CopyButton from "@/components/copy-btn";
-import SelectSection from "@/components/select-section";
 import FaqSection from "@/components/faq-section";
+import SelectionSection from "@/components/selection-section";
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <section className="mt-4 w-full p-4 bg-base-200 rounded-3xl">
-        <SelectSection />
+        <SelectionSection />
       </section>
       <section className="w-full p-4 bg-base-200 rounded-3xl my-12">
         <CopyTextarea />

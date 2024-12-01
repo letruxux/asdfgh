@@ -19,19 +19,19 @@ export const PackageSchema = z.object({
   Latest: z.object({
     Name: z.string(),
     Publisher: z.string(),
-    Tags: z.array(z.string()).optional().default([]),
-    Description: z.string().optional().default(""),
+    Tags: z.array(z.string()),
+    Description: z.string(),
     License: z.string().nullable().default(null),
     LicenseUrl: z.string().nullable().default(null),
     Homepage: z.string().nullable().default(null),
   }),
-  Featured: z.boolean().optional().default(true),
-  IconUrl: z.string().nullable().optional().default(null),
-  Banner: z.string().nullable().optional().default(null),
-  Logo: z.string().nullable().optional().default(null),
-  UpdatedAt: z.string().optional().default(new Date().toISOString()) /* .date() */,
-  CreatedAt: z.string().optional().default(new Date().toISOString()) /* .date() */,
-  SearchScore: z.number().optional().default(1),
+  Featured: z.boolean(),
+  IconUrl: z.string().nullable(),
+  Banner: z.string().nullable(),
+  Logo: z.string().nullable(),
+  UpdatedAt: z.string() /* .date() */,
+  CreatedAt: z.string() /* .date() */,
+  SearchScore: z.number(),
 });
 
 export const SearchResponseSchema = z.object({
