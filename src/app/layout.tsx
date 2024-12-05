@@ -4,6 +4,7 @@ import "./globals.css";
 import { PackagesProvider } from "@/components/packages-provider";
 import { Toaster } from "react-hot-toast";
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "asdfgh ☆",
@@ -50,6 +51,7 @@ export default function RootLayout({
           <section className="max-w-6xl w-full block mx-auto">{children}</section>
         </PackagesProvider>
       </body>
+      <GoogleAnalytics gaId="G-LXJWDMS0X2" />
     </html>
   );
 }
