@@ -4,6 +4,10 @@ const qa = [
     <p key={1}>
       Open a <code>Powershell</code>, paste the code and press enter.
     </p>,
+  ],[
+    "It says Winget not found",
+    <p key={2}> Follow <a href="https://github.com/gerardog/winget-installer">this guide</a> to install it
+    </p>,
   ],
 ] as const;
 
