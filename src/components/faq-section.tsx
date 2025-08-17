@@ -2,7 +2,7 @@ const qa = [
   [
     "How do i run this?",
     <p key={1}>
-      Open a <code>command prompt</code>, paste the code and press enter.
+      Open a <code>Powershell</code>, paste the code and press enter.
     </p>,
   ],
 ] as const;
